@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>DM Detailing · Mobile car detailing in Bendigo, Victoria (concept)</title>
+<meta name="description" content="Concept redesign: DM Detailing, mobile car detailing around Bendigo with ceramic coatings, paint correction and window tinting.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d0c0f'/%3E%3Crect x='10' y='28' width='44' height='8' rx='4' fill='%23ff3347'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+html,body{background:#0d0c0f;color:#f4f1ec}
+:root{
+  --bg:#0d0c0f;--bg-2:#141217;--bg-3:#1b181f;
+  --pearl:#f4f1ec;--pearl-80:rgba(244,241,236,.84);--pearl-60:rgba(244,241,236,.64);--pearl-40:rgba(244,241,236,.44);
+  --line:rgba(244,241,236,.11);
+  --red:#ff3347;--red-btn:#e11d35;--red-deep:#7a0f1d;--glow:#ff8a7a;
+  --ink:#0a0809;
+  --disp:"Chakra Petch","Arial Narrow",Arial,sans-serif;
+  --body:Manrope,"Helvetica Neue",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font:400 17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--glow);outline-offset:3px}
+.wrap{width:min(1280px,100% - 48px);margin-inline:auto}
+.kick{display:inline-flex;align-items:center;gap:12px;font:600 12.5px/1.2 var(--disp);letter-spacing:.24em;text-transform:uppercase;color:var(--glow)}
+.kick::before{content:"";width:22px;height:4px;border-radius:2px;background:var(--red);box-shadow:0 0 10px var(--red)}
+.disp{font-family:var(--disp);font-weight:700;text-transform:uppercase;line-height:.94;letter-spacing:-.01em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:12px 26px;border-radius:12px;font:700 16px/1 var(--disp);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:transform .2s,background-color .2s,box-shadow .2s,color .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn--red{background:var(--red-btn);color:#fff;box-shadow:0 0 0 1px rgba(255,51,71,.4),0 12px 34px -10px rgba(255,51,71,.75)}
+.btn--red:hover{background:#f02a42;box-shadow:0 0 0 1px rgba(255,51,71,.6),0 16px 40px -8px rgba(255,51,71,.95);transform:translateY(-2px)}
+.btn--line{box-shadow:inset 0 0 0 1.5px rgba(244,241,236,.5);color:var(--pearl)}
+.btn--line:hover{box-shadow:inset 0 0 0 1.5px var(--pearl);background:rgba(244,241,236,.06)}
+.btn .arrow{transition:transform .2s}.btn:hover .arrow{transform:translateX(4px)}
+
+/* ribbon + header */
+.ribbon{background:#060506;color:var(--pearl-80);font:500 13px/1.4 var(--body);text-align:center;padding:9px 16px}
+.hdr{position:sticky;top:0;z-index:20;background:rgba(13,12,15,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.logo-mark{position:relative;width:50px;height:34px;border-radius:9px;background:linear-gradient(180deg,#24202a,#0b0a0d);box-shadow:inset 0 0 0 1px rgba(244,241,236,.12);display:grid;place-items:center;font:700 15px/1 var(--disp);letter-spacing:.06em}
+.logo-mark::after{content:"";position:absolute;left:8px;right:8px;bottom:5px;height:3px;border-radius:2px;background:var(--red);box-shadow:0 0 8px var(--red)}
+.logo b{display:block;font:700 21px/1 var(--disp);text-transform:uppercase;letter-spacing:.08em}
+.logo small{display:block;font:600 10.5px/1.3 var(--disp);letter-spacing:.26em;color:var(--pearl-60);margin-top:5px}
+.nav{display:none;gap:36px}
+.nav a{font:600 14px/1 var(--disp);text-transform:uppercase;letter-spacing:.16em;text-decoration:none;color:var(--pearl-80)}
+.nav a:hover{color:var(--glow)}
+.hdr .btn{min-height:46px;padding:10px 18px;font-size:14px}
+@media(min-width:960px){.nav{display:flex}}
+@media(max-width:767px){.hdr .btn{display:none}}
+
+/* hero */
+.hero{position:relative;isolation:isolate;overflow:hidden;padding:clamp(40px,4.4vw,64px) 0 0;background:radial-gradient(70% 60% at 85% 30%,rgba(255,51,71,.12),transparent 70%),var(--bg)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.5;background-image:radial-gradient(rgba(244,241,236,.07) 1px,transparent 1.2px);background-size:22px 22px;-webkit-mask-image:linear-gradient(90deg,#000,transparent 60%);mask-image:linear-gradient(90deg,#000,transparent 60%)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(46px,5.5vw,86px);margin:20px 0 22px}
+.hero h1 span{display:block}
+.hero h1 .lit{color:var(--red);text-shadow:0 0 22px rgba(255,51,71,.55),0 0 2px rgba(255,180,180,.6)}
+.hero .sub{font-size:clamp(17px,1.35vw,19px);color:var(--pearl-80);max-width:33rem;margin:0 0 34px}
+.hero .sub strong{color:var(--pearl);font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chips span{font:600 12px/1 var(--disp);letter-spacing:.18em;text-transform:uppercase;color:var(--pearl-80);padding:10px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line);background:rgba(244,241,236,.03)}
+.chips span b{color:var(--red);font-weight:700;margin-right:6px}
+.photo{position:relative;border-radius:26px 26px 26px 26px;overflow:hidden;aspect-ratio:4/3.6;box-shadow:0 40px 90px -30px rgba(0,0,0,.9),0 0 0 1px rgba(244,241,236,.1)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:42% 50%;filter:saturate(.9) contrast(1.05)}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,12,15,0) 55%,rgba(13,12,15,.75) 100%),linear-gradient(90deg,rgba(255,51,71,.12),transparent 40%)}
+.photo-tag{position:absolute;left:18px;bottom:16px;z-index:1;font:600 10.5px/1 var(--disp);letter-spacing:.2em;color:var(--pearl-80);background:rgba(10,8,9,.6);padding:8px 10px;border-radius:6px}
+.photo-badge{position:absolute;right:16px;top:16px;z-index:1;display:flex;align-items:center;gap:10px;background:rgba(10,8,9,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:12px;padding:12px 14px;box-shadow:inset 0 0 0 1px rgba(244,241,236,.12)}
+.photo-badge svg{width:26px;height:26px;color:var(--red)}
+.photo-badge b{display:block;font:700 14px/1.1 var(--disp);letter-spacing:.12em;text-transform:uppercase}
+.photo-badge small{display:block;font:500 12px/1.3 var(--body);color:var(--pearl-60)}
+
+/* the light bar (signature) */
+.boot{position:relative;margin-top:clamp(40px,4vw,56px);padding:28px 0 30px;background:linear-gradient(180deg,#19161c 0%,#0f0d11 55%,#09080a 100%);border-top:1px solid rgba(244,241,236,.16);box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}
+.boot::before{content:"";position:absolute;left:0;right:0;top:12px;height:1px;background:linear-gradient(90deg,transparent,rgba(244,241,236,.18),transparent)}
+.lightbar{position:relative;display:flex;align-items:center;gap:clamp(10px,1.4vw,22px);height:44px}
+.lb-side{flex:1;display:flex;gap:4px;height:18px;border-radius:7px;background:rgba(255,51,71,.95);box-shadow:0 0 18px rgba(255,51,71,.8),0 0 50px rgba(255,51,71,.35)}
+.lb-name{flex:none;font:700 clamp(13px,1.3vw,17px)/1 var(--disp);letter-spacing:.6em;padding-left:.6em;color:var(--pearl);text-transform:uppercase;white-space:nowrap}
+.js .lb-side{background:none;box-shadow:none}
+.lb-side i{flex:1;border-radius:3px;background:rgba(255,51,71,.1);transition:background-color .25s,box-shadow .25s}
+.lb-side i.on{background:var(--red);box-shadow:0 0 12px rgba(255,51,71,.9),0 0 34px rgba(255,51,71,.35)}
+.lb-side i.flash{background:#ffd9d4;box-shadow:0 0 16px rgba(255,200,190,1)}
+.boot-cap{display:flex;justify-content:space-between;gap:16px;margin-top:18px;font:600 11px/1.3 var(--disp);letter-spacing:.22em;text-transform:uppercase;color:var(--pearl-40)}
+.boot-cap b{color:var(--glow);font-weight:600}
+
+/* sections */
+.pad{padding:clamp(84px,10vw,136px) 0}
+.h2{font-size:clamp(42px,5.2vw,82px);margin:20px 0 0}
+.h2 em{font-style:normal;color:var(--red)}
+.lede{font-size:18px;color:var(--pearl-80);max-width:32rem;margin:0}
+.head{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end;margin-bottom:60px}
+
+/* services spec sheet */
+.services{background:var(--bg)}
+.sheet{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svc{position:relative;padding:34px 28px 38px;border-left:1px solid var(--line);transition:background-color .3s}
+.svc:first-child{border-left:0;padding-left:0}
+.svc::before{content:"";position:absolute;left:0;right:0;top:-1px;height:3px;background:var(--red);box-shadow:0 0 14px var(--red);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.svc:first-child::before{left:0}
+.svc:hover::before,.svc:focus-within::before{transform:scaleX(1)}
+.svc-n{font:600 12px/1 var(--disp);letter-spacing:.24em;color:var(--pearl-40)}
+.svc svg{width:54px;height:54px;margin:28px 0 26px;color:var(--pearl)}
+.svc svg .r{stroke:var(--red)}
+.svc h3{font:700 clamp(22px,1.9vw,28px)/1.05 var(--disp);text-transform:uppercase;letter-spacing:.02em;margin:0 0 14px}
+.svc p{margin:0;color:var(--pearl-80);font-size:16px}
+
+/* mobile section */
+.mobile{background:linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%)}
+.mob-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.pad-art{position:relative;border-radius:24px;overflow:hidden;background:radial-gradient(70% 60% at 50% 55%,#1f1b23,#0c0b0e);box-shadow:0 0 0 1px var(--line)}
+.pad-art svg{width:100%;height:auto}
+.pad-art .cap{position:absolute;left:18px;bottom:14px;font:600 10.5px/1 var(--disp);letter-spacing:.2em;color:var(--pearl-40)}
+.orbit{stroke-dasharray:6 10;animation:orbit 18s linear infinite}
+@keyframes orbit{to{stroke-dashoffset:-320}}
+.tl{animation:tl 3.2s ease-in-out infinite}
+@keyframes tl{0%,100%{opacity:.75}50%{opacity:1}}
+.steps{list-style:none;margin:40px 0 0;padding:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:24px 0;border-top:1px solid var(--line)}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps .n{font:700 34px/1 var(--disp);color:var(--red);text-shadow:0 0 16px rgba(255,51,71,.45)}
+.steps h3{font:700 22px/1.1 var(--disp);text-transform:uppercase;letter-spacing:.04em;margin:2px 0 8px}
+.steps p{margin:0;color:var(--pearl-80);font-size:16px}
+.steps a{color:var(--glow);text-underline-offset:3px;white-space:nowrap}
+
+/* mentions */
+.mentions{background:var(--bg-2);overflow:hidden}
+.words{display:flex;flex-wrap:wrap;align-items:center;gap:6px 26px;margin:0;padding:0;list-style:none}
+.words li{display:flex;align-items:center;gap:26px;font:700 clamp(40px,5.6vw,88px)/1.02 var(--disp);text-transform:uppercase;letter-spacing:-.01em;color:transparent;-webkit-text-stroke:1.5px rgba(244,241,236,.55);transition:color .3s,-webkit-text-stroke-color .3s}
+.words li::after{content:"";width:14px;height:14px;border-radius:50%;background:var(--red);box-shadow:0 0 14px var(--red);flex:none}
+.words li:last-child::after{display:none}
+.words li.fill{color:var(--pearl);-webkit-text-stroke-color:var(--pearl)}
+.words li:hover{color:var(--red);-webkit-text-stroke-color:var(--red)}
+.mention-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;margin-top:56px;padding-top:28px;border-top:1px solid var(--line)}
+.mention-foot p{margin:0;color:var(--pearl-60);font-size:15px;max-width:36rem}
+.pride{display:inline-flex;align-items:center;gap:12px;font:600 13px/1 var(--disp);letter-spacing:.18em;text-transform:uppercase;padding:12px 16px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line);background:rgba(244,241,236,.03)}
+.pride i{display:flex;height:10px;width:44px;border-radius:5px;overflow:hidden;background:linear-gradient(90deg,#e40303 0 16.6%,#ff8c00 0 33.3%,#ffed00 0 50%,#008026 0 66.6%,#24408e 0 83.3%,#732982 0)}
+
+/* book band */
+.book{position:relative;isolation:isolate;overflow:hidden;background:var(--bg)}
+.book::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(55% 80% at 80% 100%,rgba(255,51,71,.32),transparent 70%),radial-gradient(40% 60% at 10% 0%,rgba(255,51,71,.1),transparent 70%)}
+.book-card{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;padding:clamp(36px,5vw,64px);border-radius:28px;background:linear-gradient(160deg,rgba(36,31,40,.9),rgba(14,12,16,.95));box-shadow:0 0 0 1px rgba(244,241,236,.1),0 50px 100px -40px rgba(0,0,0,.9)}
+.book h2{font-size:clamp(42px,5vw,80px);margin:20px 0 22px}
+.book h2 em{font-style:normal;color:var(--red);text-shadow:0 0 22px rgba(255,51,71,.5)}
+.book p{color:var(--pearl-80);margin:0 0 30px;max-width:32rem}
+.contacts{display:flex;flex-direction:column;gap:12px}
+.ct{display:flex;align-items:center;gap:16px;min-height:68px;padding:14px 18px;border-radius:14px;background:rgba(244,241,236,.04);box-shadow:inset 0 0 0 1px var(--line);text-decoration:none;transition:background-color .2s,transform .2s}
+.ct:hover{background:rgba(255,51,71,.1);transform:translateX(4px)}
+.ct svg{width:22px;height:22px;color:var(--red);flex:none}
+.ct b{display:block;font:700 15px/1.1 var(--disp);letter-spacing:.14em;text-transform:uppercase}
+.ct small{display:block;font:500 14px/1.35 var(--body);color:var(--pearl-60);margin-top:4px;word-break:break-word}
+
+/* footer */
+.foot{background:#070607;padding:56px 0 46px;border-top:1px solid var(--line)}
+.foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:center}
+.foot nav{display:flex;gap:26px;flex-wrap:wrap}
+.foot nav a{font:600 13px/1 var(--disp);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--pearl-80)}
+.foot nav a:hover{color:var(--glow)}
+.foot-legal{margin-top:34px;padding-top:22px;border-top:1px solid var(--line);font-size:14px;color:var(--pearl-60)}
+.foot-legal p{margin:0 0 6px}
+.foot-legal .sc{font:600 11px/1.6 var(--disp);letter-spacing:.16em;text-transform:uppercase;color:var(--pearl-40)}
+
+/* mobile call bar */
+.callbar{display:none}
+@media(max-width:767px){
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;z-index:40;left:10px;right:10px;bottom:10px;padding:6px;border-radius:16px;background:rgba(13,12,15,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 0 0 1px rgba(244,241,236,.12),0 16px 40px -10px rgba(0,0,0,.8)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:9px;min-height:52px;border-radius:11px;text-decoration:none;font:700 14px/1 var(--disp);letter-spacing:.12em;text-transform:uppercase}
+  .callbar a:first-child{background:var(--red-btn);color:#fff}
+  .callbar a:last-child{background:rgba(244,241,236,.08);color:var(--pearl)}
+  .callbar svg{width:18px;height:18px}
+  .foot{padding-bottom:110px}
+}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease-out,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.js .ld{opacity:0;transform:translateY(18px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+
+/* responsive */
+@media(max-width:1100px){.sheet{grid-template-columns:1fr 1fr}.svc:nth-child(3){border-left:0;padding-left:0}.svc:nth-child(n+3){border-top:1px solid var(--line)}}
+@media(max-width:959px){
+  .hero-grid,.head,.mob-grid,.book-card{grid-template-columns:1fr;gap:40px}
+  .photo{aspect-ratio:16/11}
+  .mob-grid .pad-art{order:2}
+}
+@media(max-width:639px){
+  .wrap{width:calc(100% - 40px)}
+  .hero h1{font-size:clamp(40px,12.4vw,60px)}
+  .ctas .btn{width:100%}
+  .photo{aspect-ratio:4/3.6;border-radius:20px}
+  .sheet{grid-template-columns:1fr}
+  .svc,.svc:nth-child(3){border-left:0;padding:28px 0 30px}
+  .svc+.svc{border-top:1px solid var(--line)}
+  .svc svg{margin:18px 0 16px;width:46px;height:46px}
+  .lb-name{letter-spacing:.32em;padding-left:.32em;font-size:12px}
+  .lb-side{height:10px}
+  .boot-cap{flex-direction:column;gap:6px}
+  .words{gap:4px 16px}.words li{gap:16px;-webkit-text-stroke-width:1.2px}
+  .words li::after{width:10px;height:10px}
+  .hdr .wrap{height:68px}
+  .logo b{font-size:18px}
+  .steps li{grid-template-columns:48px 1fr;gap:14px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv,.js .ld{opacity:1;transform:none;animation:none;transition:none}
+  .orbit,.tl{animation:none}
+  .btn,.ct,.svc::before{transition:none}
+}
+</style>
+</head>
+<body class="no-js">
+<script>document.body.classList.remove('no-js');document.body.classList.add('js')</script>
+
+<div class="ribbon">Concept redesign by Jeig Torio · not the business's official website</div>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="DM Detailing, back to top"><span class="logo-mark" aria-hidden="true">DM</span><span><b>DM Detailing</b><small>MOBILE · BENDIGO</small></span></a>
+    <nav class="nav" aria-label="Main"><a href="#services">Services</a><a href="#mobile">We come to you</a><a href="#book">Contact</a></nav>
+    <a class="btn btn--red" href="https://dm-detailing-107318.square.site" target="_blank" rel="noopener">Book online <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kick ld" style="animation-delay:.1s">Mobile car detailing · Bendigo, VIC</span>
+      <h1 id="h1" class="disp ld" style="animation-delay:.22s"><span>Bendigo's</span><span class="lit">Ultimate</span><span>Car Detailing.</span></h1>
+      <p class="sub ld" style="animation-delay:.42s"><strong>Car detailing, ceramic coatings, paint correction and window tinting</strong>, done by a local Bendigo detailer who comes to you.</p>
+      <div class="ctas ld" style="animation-delay:.56s">
+        <a class="btn btn--red" href="https://dm-detailing-107318.square.site" target="_blank" rel="noopener">Book online <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--line" href="tel:+61488667603"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+61 488 667 603</a>
+      </div>
+      <div class="chips ld" style="animation-delay:.7s"><span><b>01</b>Detailing</span><span><b>02</b>Ceramic</span><span><b>03</b>Paint correction</span><span><b>04</b>Tint</span></div>
+    </div>
+    <div class="photo ld" style="animation-delay:.3s">
+      <img src="assets/foam-wash.webp" alt="Concept photo: a hand washing dark car paint with a foam-covered sponge" width="1400" height="933" fetchpriority="high">
+      <div class="photo-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><span><b>We come to you</b><small>Mobile, around Bendigo</small></span></div>
+      <span class="photo-tag">CONCEPT PHOTO · STOCK</span>
+    </div>
+  </div>
+
+  <div class="boot" aria-hidden="true">
+    <div class="wrap">
+      <div class="lightbar"><div class="lb-side" data-side="l"></div><span class="lb-name">DM Detailing</span><div class="lb-side" data-side="r"></div></div>
+      <div class="boot-cap"><span><b>Lights on.</b> Mobile detailing that comes to you.</span><span>Light bar · concept illustration</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="services pad" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv"><span class="kick">Services</span><h2 id="svc-h" class="disp h2">From the seats <em>to the clear coat.</em></h2></div>
+      <p class="lede rv">Four services, all mobile. Book the one you need online, or call and talk it through first.</p>
+    </div>
+    <div class="sheet rv">
+      <article class="svc">
+        <span class="svc-n">01</span>
+        <svg viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6h12a4 4 0 0 1 4 4l-2 20H18l-4-20a4 4 0 0 1 4-4z"/><path d="M12 30h26a4 4 0 0 1 4 4v6H8v-6a4 4 0 0 1 4-4z"/><path d="M14 40v8M36 40v8"/><path class="r" d="M44 8l2 4 4 2-4 2-2 4-2-4-4-2 4-2z"/></svg>
+        <h3>Car detailing</h3>
+        <p>A deep clean inside and out: seats, carpets, dash and trims in the cabin, and a careful wash and finish on the paintwork.</p>
+      </article>
+      <article class="svc">
+        <span class="svc-n">02</span>
+        <svg viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M27 5l17 6v13c0 12-8 20-17 25-9-5-17-13-17-25V11z"/><path class="r" d="M27 18c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg>
+        <h3>Ceramic coatings</h3>
+        <p>A hard-wearing protective layer bonded over the paint, so it sheds water and grime more easily and keeps its gloss.</p>
+      </article>
+      <article class="svc">
+        <span class="svc-n">03</span>
+        <svg viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="27" cy="27" r="20"/><circle cx="27" cy="27" r="8"/><path class="r" d="M9 14c5-4 10-5 14-4M45 40c-5 4-10 5-14 4M14 45c-4-5-5-10-4-14M40 9c4 5 5 10 4 14"/></svg>
+        <h3>Paint correction</h3>
+        <p>Machine polishing that takes out swirl marks and fine scratches, bringing the depth and clarity back to the colour.</p>
+      </article>
+      <article class="svc">
+        <span class="svc-n">04</span>
+        <svg viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 38l8-22h22l8 22z"/><path class="r" d="M18 34l6-16M26 34l6-16M34 34l4-11"/><path d="M4 44h46"/></svg>
+        <h3>Window tinting</h3>
+        <p>Tint film fitted to the glass for more privacy, less glare and a cabin that stays cooler on hot Victorian days.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="mobile pad" id="mobile" aria-labelledby="mob-h">
+  <div class="wrap mob-grid">
+    <div class="pad-art rv" role="img" aria-label="Illustration: a car seen from above, parked, with a dashed path circling it">
+      <svg viewBox="0 0 600 560" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="body" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0d0c10"/><stop offset=".5" stop-color="#2b2730"/><stop offset="1" stop-color="#0d0c10"/></linearGradient>
+          <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3542"/><stop offset="1" stop-color="#121015"/></linearGradient>
+          <filter id="bl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+          <pattern id="pav" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="rgba(244,241,236,.05)"/></pattern>
+        </defs>
+        <rect width="600" height="560" fill="url(#pav)"/>
+        <ellipse class="orbit" cx="300" cy="280" rx="205" ry="240" fill="none" stroke="rgba(255,138,122,.65)" stroke-width="2"/>
+        <!-- car, top-down, front up -->
+        <g transform="translate(300 280)">
+          <ellipse cx="0" cy="8" rx="98" ry="200" fill="#000" opacity=".55" filter="url(#bl)"/>
+          <path d="M-78-150c4-34 30-48 78-48s74 14 78 48l8 120 0 140c-2 40-26 66-86 66s-84-26-86-66l0-140z" fill="url(#body)" stroke="rgba(244,241,236,.25)" stroke-width="1.5"/>
+          <path d="M-62-96c20-14 104-14 124 0l-10 52c-30-8-74-8-104 0z" fill="url(#glass)" stroke="rgba(244,241,236,.18)"/>
+          <path d="M-56 96c28 10 84 10 112 0l6 44c-36 14-88 14-124 0z" fill="url(#glass)" stroke="rgba(244,241,236,.18)"/>
+          <rect x="-56" y="-38" width="112" height="128" rx="14" fill="#16141a" stroke="rgba(244,241,236,.12)"/>
+          <path d="M-20-190c6 50 6 330 0 380" stroke="rgba(244,241,236,.12)" stroke-width="1"/>
+          <path d="M-90-40h-12v30h12M90-40h12v30h-12" fill="#16141a" stroke="rgba(244,241,236,.2)"/>
+          <!-- headlights -->
+          <path d="M-70-186c10-6 22-8 30-8l-4 10c-10 0-18 2-26 6z" fill="#f4f1ec" opacity=".85"/>
+          <path d="M70-186c-10-6-22-8-30-8l4 10c10 0 18 2 26 6z" fill="#f4f1ec" opacity=".85"/>
+          <!-- full-width tail light -->
+          <rect class="tl" x="-76" y="182" width="152" height="8" rx="4" fill="#ff3347" filter="url(#bl)"/>
+          <rect class="tl" x="-74" y="183" width="148" height="6" rx="3" fill="#ff3347"/>
+        </g>
+        <!-- pin -->
+        <g transform="translate(470 58)">
+          <path d="M0 44C-5 34-20 22-20 5a20 20 0 0 1 40 0c0 17-15 29-20 39z" fill="#ff3347"/>
+          <circle cx="0" cy="5" r="7" fill="#0d0c0f"/>
+        </g>
+        <text x="470" y="40" text-anchor="middle" fill="rgba(244,241,236,.75)" font-family="Chakra Petch,Arial" font-weight="600" font-size="12" letter-spacing="3">YOUR PLACE</text>
+      </svg>
+      <span class="cap">CONCEPT ILLUSTRATION</span>
+    </div>
+    <div class="rv">
+      <span class="kick">Mobile service</span>
+      <h2 id="mob-h" class="disp h2">You stay put. <em>We come to you.</em></h2>
+      <ol class="steps">
+        <li><span class="n">01</span><div><h3>Book online</h3><p>Pick your service and a time on our <a href="https://dm-detailing-107318.square.site" target="_blank" rel="noopener">booking page</a>. Rather talk first? Call <a href="tel:+61488667603">+61 488 667 603</a>.</p></div></li>
+        <li><span class="n">02</span><div><h3>We come to you</h3><p>DM Detailing is a mobile service around Bendigo, so there's no dropping the car off or waiting around for a lift.</p></div></li>
+        <li><span class="n">03</span><div><h3>That new-car feel</h3><p>A spotless finish inside and out, and the new-car feel customers keep mentioning.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="mentions pad" id="mentions" aria-labelledby="men-h">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv"><span class="kick">What customers say</span><h2 id="men-h" class="disp h2">What customers <em>bring up.</em></h2></div>
+      <p class="lede rv">Read what customers say about DM Detailing and the same few things keep coming up.</p>
+    </div>
+    <ul class="words rv">
+      <li class="fill">Punctuality</li>
+      <li>Spotless</li>
+      <li class="fill">Interior detailing</li>
+      <li>New-car feel</li>
+      <li class="fill">Clear communication</li>
+    </ul>
+    <div class="mention-foot rv">
+      <p>Themes customers raise, put in our own words.</p>
+      <span class="pride"><i aria-hidden="true"></i>LGBTQ+ friendly</span>
+    </div>
+  </div>
+</section>
+
+<section class="book pad" id="book" aria-labelledby="book-h">
+  <div class="wrap">
+    <div class="book-card rv">
+      <div>
+        <span class="kick">Book or ask</span>
+        <h2 id="book-h" class="disp">Pick a time. <em>We'll bring the shine.</em></h2>
+        <p>Book online in a couple of taps, or call or email with a question about your car first.</p>
+        <div class="ctas">
+          <a class="btn btn--red" href="https://dm-detailing-107318.square.site" target="_blank" rel="noopener">Book online <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--line" href="tel:+61488667603">Call us</a>
+        </div>
+      </div>
+      <div class="contacts">
+        <a class="ct" href="tel:+61488667603"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><b>Call</b><small>+61 488 667 603</small></span></a>
+        <a class="ct" href="mailto:dmcardetailing.co@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><b>Email</b><small>dmcardetailing.co@gmail.com</small></span></a>
+        <a class="ct" href="https://www.google.com/maps/search/?api=1&amp;query=DM+Detailing+-+Mobile+Car+Detailing+Bendigo%2C+Bendigo+VIC" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><span><b>Google Maps</b><small>Mobile service around Bendigo</small></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">DM</span><span><b>DM Detailing</b><small>MOBILE CAR DETAILING · BENDIGO, VIC</small></span></a>
+      <nav aria-label="Footer"><a href="#services">Services</a><a href="#mobile">We come to you</a><a href="#book">Contact</a><a href="https://dm-detailing-107318.square.site" target="_blank" rel="noopener">Book online</a></nav>
+    </div>
+    <div class="foot-legal">
+      <p>Concept redesign by Jeig Torio · not the business's official website</p>
+      <p class="sc">Photo is a stock concept placeholder · light bar, icons and car drawing are concept illustrations</p>
+    </div>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a href="tel:+61488667603"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
+  <a href="https://dm-detailing-107318.square.site" target="_blank" rel="noopener">Book online</a>
+</nav>
+
+<script>
+(function(){
+  var sides=document.querySelectorAll('.lb-side');
+  var n=window.innerWidth<640?9:18, all=[];
+  sides.forEach(function(s){
+    var left=s.getAttribute('data-side')==='l',h='';
+    for(var i=0;i<n;i++)h+='<i></i>';
+    s.innerHTML=h;
+    var seg=[].slice.call(s.children);
+    if(left)seg.reverse(); // index 0 = nearest the centre
+    seg.forEach(function(e,i){all.push({e:e,d:i})});
+  });
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){all.forEach(function(o){o.e.classList.add('on')});return}
+  function welcome(){
+    all.forEach(function(o){o.e.classList.remove('on','flash')});
+    all.forEach(function(o){setTimeout(function(){o.e.classList.add('on')},500+o.d*55)});
+    var t=500+n*55+350;
+    all.forEach(function(o){setTimeout(function(){o.e.classList.add('flash');setTimeout(function(){o.e.classList.remove('flash')},140)},t+o.d*40)});
+  }
+  welcome();
+  var boot=document.querySelector('.boot'),seen=true;
+  if('IntersectionObserver' in window){new IntersectionObserver(function(e){var v=e[0].isIntersecting;if(v&&!seen)welcome();seen=v},{threshold:.6}).observe(boot)}
+})();
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+  setTimeout(function(){els.forEach(function(e){if(e.getBoundingClientRect().top<innerHeight)e.classList.add('in')})},1200);
+})();
+</script>
+</body>
+</html>
